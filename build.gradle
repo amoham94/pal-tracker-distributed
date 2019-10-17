@@ -29,6 +29,15 @@ buildscript {
 
 apply plugin: DependenciesGraphPlugin
 
+assignments {
+    apiUrl = "https://api.sys.evans.pal.pivotal.io/"
+    emails = [
+            "robrien3@ford.com",
+            "amoham94@ford.com",
+    ]
+    cohortIdentifier = "349803146"
+}
+
 subprojects {
     group "io.pivotal.pal.tracker"
 
